@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="201.888 245.238 13.783 16.9698" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="16.9698" width="13.783" x="201.888" y="245.238"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Группа 4">
+<path d="M204.863 249.415C200.361 252.941 203.153 260.991 203.153 260.991C206.833 259.807 207.464 254.575 207.464 254.575C208.115 259.842 214.555 262.207 214.555 262.207C215.902 254.945 210.809 253.073 210.809 253.073C213.569 252.612 215.671 249.918 215.671 249.918C211.86 246.567 206.339 248.259 204.863 249.415" fill="#959b38" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+<path d="M202.167 245.516C205.141 250.723 210.686 255.53 210.686 255.53" fill="none" opacity="1" stroke="#592e11" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.557588" vectornator:layerName="path"/>
+</g>
+</g>
+</svg>

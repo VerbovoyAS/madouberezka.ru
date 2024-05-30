@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="465.29 180.321 36.6838 32.1583" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="32.1583" width="36.6838" x="465.29" y="180.321"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Группа 2">
+<path d="M465.345 184.879C476.933 182.536 485.339 192.871 485.339 192.871C483.295 184.6 489.598 180.321 489.598 180.321C501.137 188.874 495.235 205.753 495.235 205.753C485.808 213.781 472.235 209.413 472.235 209.413C473.816 203.804 478.276 200.657 478.276 200.657C463.709 195.918 465.345 184.879 465.345 184.879" fill="#aaaf46" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+<path d="M490.604 190.273C492.215 191.946 493.741 200.518 493.741 200.518L495.282 205.328C493.122 206.791 481.413 206.164 481.413 206.164L486.57 202.261C486.57 202.261 480.258 197.94 476.932 193.688C476.932 193.688 485.656 195.155 488.522 197.69L490.604 190.273Z" fill="#959b38" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+<path d="M501.416 211.922C495.19 202.256 476.021 193.445 476.021 193.445" fill="none" opacity="1" stroke="#592e11" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.11518" vectornator:layerName="path"/>
+<path d="M490.45 188.782C490.914 192.871 491.548 202.597 491.548 202.597C489.428 204.302 480.463 206.438 480.463 206.438" fill="none" opacity="1" stroke="#592e11" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.11518" vectornator:layerName="path"/>
+</g>
+</g>
+</svg>
