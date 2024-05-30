@@ -296,10 +296,10 @@ final class GutenbergBlock
                     }
                 </style>
                 <?php if ($query->have_posts()) :?>
+                <?php if ($fields['show_header']) :?>
+                    <h2 class="pb-2 text-center"><?= $catName; ?></h2>
+                <?php endif; ?>
                 <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
-                    <?php if ($fields['show_header']) :?>
-                    <h2 class="pb-2 border-bottom"><?= $catName; ?></h2>
-                    <?php endif; ?>
                     <div class="owl-carousel owl-theme">
                         <?php
                         foreach ($query->get_posts() as $i => $WPost):
