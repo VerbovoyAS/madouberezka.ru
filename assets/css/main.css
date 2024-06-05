@@ -1,24 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+/*
+TODO убрать как только утвердят цвета
+ */
+/*:root {*/
+/*    --main-color: #375F28;*/
+/*    --bs-link-color: #375F28;*/
+/*    --bs-link-hover-color: #50913a;*/
+/*}*/
+
 :root {
-    --main-color: #375F28;
-    --bs-link-color: #375F28;
-    --bs-link-hover-color: #50913a;
+    --main-color: #055e09;
+    --main-color-bg: #83d8308f;
+    --bs-link-color: #055e09;
+    --bs-link-hover-color: #055e09c4;
 }
 
 .accordion {
     --bs-accordion-btn-color: var(--main-color);
-    --bs-accordion-btn-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23375F28'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23375F28'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23055e09'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23055e09'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(54, 93, 41, 0.25);
-    --bs-accordion-active-color: #155537;
-    --bs-accordion-active-bg: #D7DB86;
+    --bs-accordion-active-color: var(--main-color);
+    --bs-accordion-active-bg: var(--main-color-bg);
 }
 
 .block h1, h2, h3, h4, h5, h6 {
     text-decoration: none !important;
-    color: #375F28 !important;
+    color: var(--main-color) !important;
 }
 
 hr {
@@ -30,9 +40,9 @@ hr {
 }
 
 .alert-info {
-    --bs-alert-color: #375F28 !important;
-    --bs-alert-bg: #D7DB86;
-    --bs-alert-border-color: #BABD70;
+    --bs-alert-color: var(--main-color) !important;
+    --bs-alert-bg: var(--main-color-bg);
+    --bs-alert-border-color: var(--main-color-bg);
 }
 
 .link-secondary {
@@ -110,7 +120,7 @@ header object {
     padding: 5px 0 5px 30px;
     margin: 0;
     list-style: none !important;
-    background-image: url("../img/site/h-list-style-1.svg");
+    background-image: url("../img/site/h-list-style-1-new.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
@@ -127,7 +137,7 @@ header object {
     padding-left: 40px;
     margin: 0;
     list-style: none;
-    background-image: url("../img/site/h-list-style-2.svg");
+    background-image: url("../img/site/h-list-style-2-new.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
@@ -137,7 +147,7 @@ header object {
     padding-left: 40px;
     margin: 0;
     list-style: none;
-    background-image: url("../img/site/h-list-style-1.svg");
+    background-image: url("../img/site/h-list-style-1-new.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
@@ -162,7 +172,7 @@ header object svg {
 /*}*/
 
 .card-custom-img {
-    background-image: url("../img/site/bg.svg");
+    background-image: url("../img/site/bg-new.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -181,7 +191,7 @@ header object svg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../img/site/berezka-main.svg') !important;
+    background-image: url('../img/site/berezka-main-new.svg') !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
