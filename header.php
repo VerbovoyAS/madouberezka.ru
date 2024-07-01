@@ -48,7 +48,7 @@ if (is_archive()) {
                         'theme_location' => 'header-menu',
                         'menu_class'     => 'main-menu',
                         'fallback_cb'    => '__return_false',
-                        'items_wrap'     => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s stars-img">%3$s</ul>',
+                        'items_wrap'     => '<ul id="%1$s" class="navbar-nav mb-2 mb-md-0 %2$s h-menu-style">%3$s</ul>',
                         'depth'          => 2,
                         'walker'         => new BootstrapNavMenu()
                     ]
