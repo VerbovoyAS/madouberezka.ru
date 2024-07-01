@@ -41,7 +41,7 @@
     <div class="row px-2 px-lg-0">
         <div class="col-lg-4">
             <div class="row me-lg-1">
-                <div class="col shadow mb-2 p-3 bg-body rounded-3 stars">
+                <div class="col shadow mb-2 p-3 bg-body rounded-3 h-list-style">
                     <?php dynamic_sidebar( 'sidebar-info-edu' ); ?>
                 </div>
             </div>

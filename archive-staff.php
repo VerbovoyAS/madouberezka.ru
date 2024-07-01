@@ -175,7 +175,7 @@ get_header();
 
             <div class="col-12 col-lg-4">
                 <div class="row">
-                    <div class="col shadow mb-2 p-3 bg-body rounded-3 stars">
+                    <div class="col shadow mb-2 p-3 bg-body rounded-3 h-list-style">
                         <?php get_sidebar(); ?>
                     </div>
                 </div>
