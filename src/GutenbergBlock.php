@@ -959,16 +959,32 @@ final class GutenbergBlock
                                     ],
                                 ]),
             ]
+        )->add_tab(
+            'Сортировка',
+            [
+                Field::make('select', 'orderby', 'Поле сортировки')
+                    ->set_default_value('Без сортировки')
+                    ->set_options([
+                                      'none'  => 'Без сортировки',
+                                      'ID'    => 'по ID',
+                                      'title' => 'по заголовку',
+                                      'date'  => 'по дате публикации',
+                                  ]),
+                Field::make( 'radio', 'order', __( 'Направление сортировки' ) )
+                    ->set_options( ['ASC' => 'ASC', 'DESC' => 'DESC'] )->set_default_value('ASC')
+            ]
         )->set_render_callback(function ($fields) {
             global $post;
             $postId = isset($fields['associations'][0]) ? $fields['associations'][0]['id'] : $post->ID;
 
-            $childrens = get_children( [
-                                           'post_parent' => $postId,
-                                           'post_type'   => 'page',
-                                           'numberposts' => -1,
-                                           'post_status' => 'publish'
-                                       ] );
+            $childrens = get_children([
+                                          'post_parent' => $postId,
+                                          'post_type'   => 'page',
+                                          'numberposts' => -1,
+                                          'post_status' => 'publish',
+                                          'orderby'     => $fields['orderby'],
+                                          'order'       => $fields['order'],
+                                      ]);
 
             $class = '';
             if($fields['show_h_list_style']){
