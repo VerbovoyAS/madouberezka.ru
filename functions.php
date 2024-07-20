@@ -272,6 +272,7 @@ function crb_load()
     GutenbergBlock::blockStaffList();
     GutenbergBlock::blockPageCardAndIcon();
     GutenbergBlock::alertBlock();
+    GutenbergBlock::getChildrenPageBlock();
 
     GutenbergContainer::settingSite();
     GutenbergContainer::fieldsStaff();

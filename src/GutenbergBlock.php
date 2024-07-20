@@ -942,4 +942,48 @@ final class GutenbergBlock
             <?php
         });
     }
+
+    public static function getChildrenPageBlock()
+    {
+        Block::make('get_children_page', 'Список дочерних страниц')->add_fields(
+            [
+                Field::make('separator', 'separator', 'Список дочерних страниц'),
+                Field::make('checkbox', 'show_h_list_style', 'Отображать красивым списком' )->set_default_value(1),
+                Field::make('association', 'associations', 'Выберите родительскую запись')
+                    ->set_help_text('если не указать родительскую запись, построит список по текущей записи')
+                    ->set_max(1)
+                    ->set_types([
+                                    [
+                                        'type'      => 'post',
+                                        'post_type' => 'page',
+                                    ],
+                                ]),
+            ]
+        )->set_render_callback(function ($fields) {
+            global $post;
+            $postId = isset($fields['associations'][0]) ? $fields['associations'][0]['id'] : $post->ID;
+
+            $childrens = get_children( [
+                                           'post_parent' => $postId,
+                                           'post_type'   => 'page',
+                                           'numberposts' => -1,
+                                           'post_status' => 'publish'
+                                       ] );
+
+            $class = '';
+            if($fields['show_h_list_style']){
+                $class .= 'h-list-style ';
+            }
+
+            ?>
+            <ul class="<?= $class;?>">
+                <?php foreach ($childrens as $children):?>
+                <li>
+                    <a href="<?= get_the_permalink($children->ID); ?>"><?= $children->post_title; ?></a>
+                </li>
+                <?php endforeach;?>
+            </ul>
+            <?php
+        });
+    }
 }
