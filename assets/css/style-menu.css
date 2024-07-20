@@ -51,7 +51,7 @@
 }
 
 .h-menu-style li a:not(.dropdown-toggle, .dropdown-item):after{
-    content: url("../img/site/h-list-style-1-new.svg");
+    content: url("../img/site/h-list-style-2-new.svg");
     display: block;
     width: 20px;
     height: 20px;
