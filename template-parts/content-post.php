@@ -25,7 +25,7 @@ use HashtagCore\Hashtag;
 
     <div class="container-lg">
         <div class="row pb-2 px-2 px-lg-0">
-            <div class="col-12 col-lg-8 text-muted">
+            <div class="col-12 text-muted">
                 <!-- Breadcrumbs -->
                 <?php Hashtag::breadcrumbs(); ?>
                 <!-- /breadcrumb -->
