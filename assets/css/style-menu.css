@@ -5,7 +5,7 @@
 .dropdown-item.active,
 .dropdown-item:active {
     color: var(--main-color);!important;
-    background-color: #6c757d!important;
+    background-color: var(--main-color-bg)!important;
 }
 
 
