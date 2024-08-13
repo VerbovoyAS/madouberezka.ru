@@ -297,6 +297,7 @@ function true_load_posts()
 add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
 
+/** РЕГИСТРАЦИЯ НОВОГО SHORTCODE */
 add_shortcode('get-main-site', 'get_main_setting_shortcode');
 
 /**
@@ -320,39 +321,6 @@ function get_main_setting_shortcode($atts)
         default:
             return '';
     }
-}
-
-/** РЕГИСТРАЦИЯ НОВОГО SHORTCODE */
-add_shortcode('get-button-visually-impaired', 'get_button_visually_impaired_shortcode');
-
-/**
- * Shortcode для вывода кнопки для слабовидящих
- * Пример: [get-button-visually-impaired]
- * Своя стилизованная кнопка.
- * За основу используется плагин https://slabovid.ru
- *
- * @param $atts
- * @return mixed|string|null
- */
-function get_button_visually_impaired_shortcode($atts)
-{
-    $queryMibok = false;
-    if (!empty($_SERVER['QUERY_STRING'])) {
-        $queryMibok = $_SERVER['QUERY_STRING'];
-    }
-
-    if (!empty($queryMibok)) {
-        $link = '?' . $queryMibok . '&special_version=Y';
-    } else {
-        $link = '?special_version=Y';
-    }
-
-    return "<div class='wrapper-mibok-glaza mibok-link51 '>
-                <a href='$link' class='btn btn-success'>
-                    <i class='bi bi-eye'></i>
-                    Версия для слабовидящих
-                </a>
-            </div>";
 }
 
 /** ОБНОВЛЕНИЯ WP */
