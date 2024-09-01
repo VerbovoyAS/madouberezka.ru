@@ -10,15 +10,6 @@ use HashtagCore\Staffs;
 
 get_header();
 ?>
-<style>
-    .gradient-custom {
-        background: #174a99;
-        background-image: url(<?= get_template_directory_uri() . '/assets/img/site/staff-bg.svg';?>);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
 
     <div class="container-lg">
         <div class="row">

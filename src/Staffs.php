@@ -183,21 +183,4 @@ final class Staffs
         }
         return $category;
     }
-
-    public static function getStyleBlock(): string
-    {
-        $url = get_template_directory_uri() . '/assets/img/site/staff-bg.svg';
-        return "
-        <style>
-            .gradient-custom {
-                background: #174a99;
-                background-image: url($url);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        </style>
-        ";
-    }
-
 }

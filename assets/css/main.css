@@ -426,3 +426,11 @@ table.border {
 !important;
 }
 
+/** Staffs style */
+.gradient-custom {
+    background: var(--main-color);
+    /*background-image: url();*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

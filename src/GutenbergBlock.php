@@ -640,8 +640,6 @@ final class GutenbergBlock
                 ]
             )
             ->set_render_callback(function ($fields) {
-                // Стили для блоков
-                echo Staffs::getStyleBlock();
 
                 $arg = [
                     'post_type'      => POST_TYPE_STAFF,
