@@ -644,7 +644,7 @@ final class GutenbergBlock
                 $arg = [
                     'post_type'      => POST_TYPE_STAFF,
                     'posts_per_page' => -1,
-                    'orderby'        => ['meta_value_num' => 'DESC'],
+                    'orderby'        => ['menu_order' => 'DESC', 'meta_value_num' => 'DESC'],
                     'meta_query'     => [
                         'relation' => 'OR',
                         [
