@@ -66,7 +66,7 @@ $teaching_experience = carbon_get_the_post_meta( Staffs::STAFF_TEACHING_EXPERIEN
                         <hr>
                         <?php
                         if ($year_advanced_training) {
-                            Staffs::getParametersHtml('Год повышения квалификации:', $year_advanced_training ?: ' ');
+                            Staffs::getParametersHtml('Год повышения квалификации:', (new DateTime($year_advanced_training))->format('Y') ?: ' ');
                             echo "<hr>";
                         }
 

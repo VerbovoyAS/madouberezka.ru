@@ -5,6 +5,7 @@ namespace HashtagCore;
 use Carbon_Fields\Block;
 use Carbon_Fields\Field\Complex_Field;
 use Carbon_Fields\Field\Field;
+use DateTime;
 use WP_Query;
 
 final class GutenbergBlock
@@ -640,11 +641,21 @@ final class GutenbergBlock
                 ]
             )
             ->set_render_callback(function ($fields) {
-
                 $arg = [
                     'post_type'      => POST_TYPE_STAFF,
                     'posts_per_page' => -1,
-                    'orderby'        => 'menu_order',
+                    'orderby'        => ['meta_value_num' => 'DESC'],
+                    'meta_query'     => [
+                        'relation' => 'OR',
+                        [
+                            'key'     => '_thumbnail_id',
+                            'compare' => 'NOT EXISTS',
+                        ],
+                        [
+                            'key'     => '_thumbnail_id',
+                            'compare' => 'EXISTS',
+                        ]
+                    ],
                     'order'          => 'DESC',
                 ];
 
@@ -790,7 +801,7 @@ final class GutenbergBlock
                                         <?php if($year_advanced_training):?>
                                         <tr>
                                             <th scope="row"  class="p-1" style="width: 35%;">Год повышения квалификации:</th>
-                                            <td class="p-1"><?= $year_advanced_training; ?></td>
+                                            <td class="p-1"><?= (new DateTime($year_advanced_training))->format('Y') ?: ' '; ?></td>
                                         </tr>
                                         <?php endif;?>
                                         <tr>
