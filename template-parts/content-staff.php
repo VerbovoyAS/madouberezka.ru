@@ -83,6 +83,8 @@ $teaching_experience = carbon_get_the_post_meta( Staffs::STAFF_TEACHING_EXPERIEN
                         <?php Staffs::getParametersHtml('Общий стаж работы:', Staffs::getTimeDiff($general_experience)); ?>
                         <hr>
                         <?php Staffs::getParametersHtml('Педагогический стаж работы:', Staffs::getTimeDiff($teaching_experience)); ?>
+                        <hr>
+                        <?php the_content(); ?>
                     </div>
                 </div>
             </div>
