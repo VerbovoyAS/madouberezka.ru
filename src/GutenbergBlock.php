@@ -724,7 +724,11 @@ final class GutenbergBlock
                                     <img src="<?php echo get_the_post_thumbnail_url() ?? '' ?>" class="img-fluid rounded-3 my-3" alt="">
                                 </div>
                                 <div class="col-12 col-lg-8 ps-3">
-                                    <h3 class="py-2 border-bottom text-black-75"><?php the_title('','');?></h3>
+                                    <h3 class="py-2 border-bottom text-black-75">
+                                        <a href="<?= get_post_permalink(); ?>">
+                                            <?php the_title('','');?>
+                                        </a>
+                                    </h3>
                                     <h5 class="text-secondary"><?= Staffs::getTermsParameters($positions_staffs);?></h5>
                                     <p class="text-secondary"></p>
                                     <?php if ($fields['small_version']): ?>
