@@ -188,6 +188,10 @@ header object svg {
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.owl-height {
+    height: 250px !important;
+}
+
 .p-slider {
     width: 100%;
     height: 100vh;
