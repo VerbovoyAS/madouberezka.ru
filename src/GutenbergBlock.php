@@ -275,7 +275,7 @@ final class GutenbergBlock
                     ->set_default_value('1')
                     ->set_options([ '1' => 1, '2' => 2, '3' => 3, '4' => 4, '5' => 5]),
                 Field::make( 'checkbox', 'autoplay', 'Включить авто прокрутку' )->set_default_value(true),
-                Field::make('text', 'autoplay_time', 'Время задержки')->set_default_value(3000),
+                Field::make('text', 'autoplay_time', 'Время задержки')->set_default_value(6000),
             ])
             ->set_render_callback(function ($fields) {
                 $category = $fields['category_post'] ?: DEFAULT_CATEGORY;
@@ -316,7 +316,7 @@ final class GutenbergBlock
                             }
                             ?>
 
-                            <div class="card card-cover h-100 overflow-hidden bg-dark rounded-5 " style="background-image: url(<?= $img_url; ?>); text-shadow: black 0.1em 0.1em 0.2em;">
+                            <div class="card card-cover h-100 overflow-hidden bg-dark rounded-5 " style="background-image: url(<?= $img_url; ?>);">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-3">
                                     <a class="mt-auto link-light text-decoration-none" href="<?= get_the_permalink($WPost->ID); ?>">
                                         <h2 class="lh-2 fw-bold text-white" ><?= $WPost->post_title; ?></h2>
@@ -350,7 +350,7 @@ final class GutenbergBlock
                             autoHeight:true,
                             // autoWidth:true,
                             autoplay:<?= $fields['autoplay'] === true ? 'true' : 'false';?>,
-                            autoplayTimeout:<?= $fields['autoplay_time'] ?? 3000;?>,
+                            autoplayTimeout:<?= $fields['autoplay_time'] ?? 6000;?>,
                             autoplayHoverPause:true,
                             responsive: {
                                 0: {

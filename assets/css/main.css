@@ -183,8 +183,9 @@ header object svg {
 /*для красивых карточек*/
 .card-cover {
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .p-slider {

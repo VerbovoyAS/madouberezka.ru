@@ -16,8 +16,8 @@ if (is_archive()) {
     $title = get_the_archive_title();
 }
 
-//var_dump(wp_get_original_image_url(carbon_get_theme_option(SITE_LOGO)));
-//var_dump(carbon_get_theme_option(SITE_LOGO));
+// TODO: Лютый костыль для работы плагина integrate-google-drive-cache - на всякий случай
+//igd_delete_cache()
 
 ?>
 <!DOCTYPE html>
